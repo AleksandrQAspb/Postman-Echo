@@ -6,7 +6,7 @@ import static org.hamcrest.Matchers.equalTo;
 
 public class PostmanEchoTest {
 
-    @Test
+    //@Test
     public void postRequest_shouldReturnSentData() {
         String sentData = "some data";
 
@@ -22,7 +22,7 @@ public class PostmanEchoTest {
                 .body("data", equalTo(sentData));
     }
 
-    //@Test
+    @Test
     public void postRequest_withWrongJsonPath_shouldFail() {
         String sentData = "some data";
 
